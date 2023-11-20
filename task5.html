@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            color: white;
+            min-height: 100vh;
+          
+          
+
+        }
+        .left{
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+
+        }
+        .middle{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        .middle1{
+         background-color: seagreen;
+         padding: 20px;
+         text-align: center;
+        }
+        .middle2{
+         background-color: orange;
+         padding: 20px;
+         text-align: center;
+        }
+        .right{
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media (min-width:768px) {
+            .container {
+flex-direction: row;
+}
+.middle2 , .middle1{
+    flex: 1;
+}
+}
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">BOX1</div>
+        <div class="middle">
+            <div class="middle1">BOX2</div>
+            <div class="middle2">BOX3</div>
+        </div>
+        <div class="right">BOX4</div>
+    </div>
+</body>
+</html>
